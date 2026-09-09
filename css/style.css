@@ -221,28 +221,8 @@ p { margin: 0 0 16px; color: var(--text); }
 .top-bar .consult-btn:hover { background: var(--navy-dark); }
 
 /* ---------- Logo ---------- */
-.site-logo { display: flex; align-items: center; gap: 22px; }
-.site-logo .mark { position: relative; display: flex; align-items: center; }
-.site-logo .mark-901 {
-  font-family: var(--font-logo);
-  font-weight: 900;
-  font-size: 4.8rem;
-  color: var(--navy);
-  letter-spacing: -0.03em;
-}
-.site-logo .sunburst { width: 58px; height: 58px; margin-left: -6px; overflow: visible; }
-.sunburst .rays line { stroke: var(--gold); stroke-width: 7; stroke-linecap: round; }
-.site-logo .wordwrap { display: flex; flex-direction: column; line-height: 1.1; }
-.site-logo .word {
-  font-family: var(--font-logo);
-  font-weight: 900;
-  letter-spacing: 0.06em;
-  color: var(--navy);
-  font-size: 2.05rem;
-  padding-bottom: 8px;
-  border-bottom: 3px solid var(--gold);
-  display: inline-block;
-}
+.site-logo { display: flex; align-items: center; gap: 24px; }
+.site-logo .logo-mark { height: 112px; width: auto; display: block; }
 .site-logo .tagline {
   font-family: var(--font-head);
   font-size: 1.08rem;
@@ -251,25 +231,25 @@ p { margin: 0 0 16px; color: var(--text); }
   font-style: italic;
   color: var(--navy);
   font-weight: 700;
-  margin-top: 7px;
-  max-width: 520px;
+  max-width: 430px;
   white-space: normal;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 @media (max-width: 900px) {
-  .site-logo .mark-901 { font-size: 3.6rem; }
-  .site-logo .sunburst { width: 46px; height: 46px; }
-  .site-logo .word { font-size: 1.6rem; }
-  .site-logo .tagline { max-width: 320px; font-size: 0.95rem; }
+  .site-logo .logo-mark { height: 84px; }
+  .site-logo .tagline { max-width: 260px; font-size: 0.95rem; }
 }
 @media (max-width: 640px) {
-  .site-logo .mark-901 { font-size: 2.8rem; }
-  .site-logo .sunburst { width: 36px; height: 36px; }
-  .site-logo .word { font-size: 1.25rem; }
-  .site-logo .tagline { max-width: 220px; font-size: 0.82rem; }
+  .site-logo .logo-mark { height: 62px; }
+  .site-logo .tagline { max-width: 190px; font-size: 0.8rem; }
 }
-.site-footer .site-logo .word { border-bottom-color: var(--gold); }
-.site-footer .site-logo .tagline { color: rgba(255,255,255,0.85); }
+.site-footer .site-logo {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.site-footer .site-logo .logo-mark { height: 76px; }
+.site-footer .site-logo .tagline { color: rgba(255,255,255,0.85); max-width: 260px; }
 
 /* ---------- Sticky top (logo/CTA row + nav stay pinned together) ---------- */
 .site-top {
@@ -838,8 +818,6 @@ p { margin: 0 0 16px; color: var(--text); }
   letter-spacing: 0.04em;
   margin-bottom: 16px;
 }
-.site-footer .site-logo .mark-901,
-.site-footer .site-logo .word { color: var(--white); }
 .site-footer p { color: rgba(255,255,255,0.65); font-size: 0.9rem; }
 .footer-links { list-style: none; padding: 0; margin: 0; }
 .footer-links li { margin-bottom: 10px; }
