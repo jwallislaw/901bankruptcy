@@ -539,11 +539,14 @@ p { margin: 0 0 16px; color: var(--text); }
 .highlight-label {
   font-family: var(--font-logo);
   font-weight: 900;
-  color: var(--gold);
+  color: var(--white);
   letter-spacing: 0.03em;
   font-size: 1.35rem;
   line-height: 1.15;
   white-space: nowrap;
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--gold);
+  display: inline-block;
 }
 @media (max-width: 1080px) {
   .highlight-label { white-space: normal; font-size: 1.2rem; }
@@ -552,7 +555,7 @@ p { margin: 0 0 16px; color: var(--text); }
   font-size: 1rem;
   font-weight: 600;
   color: rgba(255,255,255,0.9);
-  margin-top: 8px;
+  margin-top: 10px;
 }
 @media (max-width: 860px) {
   .highlight-grid { flex-wrap: wrap; gap: 28px 0; }
